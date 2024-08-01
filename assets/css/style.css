@@ -1,0 +1,18 @@
+@import url(./root.css);
+.box{
+    border: 1px solid red;
+}
+.min-height-230{
+    min-height: 230px !important;
+}
+.slick-dots li button::before{
+    content:url(/assets/image/svg/dot.svg) !important;
+    width: 20px;
+    height: 20px;
+}
+.slick-dots li.slick-active button:before{
+    width: 45px !important;
+height: 15px !important;
+background:red;
+border-radius: 36px !important;
+}
