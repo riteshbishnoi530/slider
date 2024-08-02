@@ -1,18 +1,81 @@
-@import url(./root.css);
+@import url(/assets/css/root.css);
 .box{
-    border: 1px solid red;
+    border: 2px solid #DDDDDD;
 }
+
 .min-height-230{
-    min-height: 230px !important;
+    min-height: 245px !important;
+    min-width: 300px !important;
 }
-.slick-dots li button::before{
-    content:url(/assets/image/svg/dot.svg) !important;
+.max-width-555{
+    max-width: 555px;
+}
+.border-radius{
+    border-radius: 100% !important;
+    border: 2px solid #F53838;
+}
+.box:hover{
+    border:2px solid red;
+}
+
+.button-hover:hover path{
+    fill: #ffff;
+}
+.button-hover{
+    transition: all .3s linear;
+}
+.button-hover:hover{
+  background-color: red;
+}
+
+.slick-dots li button:before {
+    opacity: 0 !important;
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 50px !important;
+}
+
+.slick-dots li {
+    transition: 0.3s !important;
+}
+
+.slick-dots {
+    right: 35% !important;
+    bottom: -20% !important;
+}
+
+.slick-dots li {
+    background-color: #dde0e4;
+    border-radius: 50%;
+}
+
+.slick-dots .slick-active {
+    width: 45px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+.slick-dots {
+    display: flex;
+    margin-top: 10px;
+    bottom: -70px;
+    width: 55.5%;
+}
+
+.slick-dots li button:before {
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 20px;
     height: 20px;
-}
-.slick-dots li.slick-active button:before{
-    width: 45px !important;
-height: 15px !important;
-background:red;
-border-radius: 36px !important;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: transparent !important;
 }
