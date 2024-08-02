@@ -1,0 +1,32 @@
+:root {
+    --fs-3xl: 48px;
+    --fs-2xl: 35px;
+    --fs-xl: 24px;
+    --fs-lg: 18px;
+    --fs-md: 16px;
+    --fs-sm: 14px;
+}
+
+.fs-48 {
+    font-size: var(--fs-3xl) !important;
+}
+
+.fs-24 {
+    font-size: var(--fs-xl) !important;
+}
+
+.fs-35 {
+    font-size: var(--fs-2xl) !important;
+}
+
+.fs-16 {
+    font-size: var(--fs-md) !important;
+}
+
+.fs-18 {
+    font-size: var(--fs-lg) !important;
+}
+
+.fs-14 {
+    font-size: var(--fs-sm) !important;
+}

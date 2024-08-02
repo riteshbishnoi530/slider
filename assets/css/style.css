@@ -1,31 +1,169 @@
 @import url(/assets/css/root.css);
-.box{
+
+@import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*================================font-family==========================*/
+.font-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-Audiowide {
+    font-family: "Audiowide", sans-serif;
+}
+
+.font-Montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*===================================accordion-1============================*/
+.bg-yellow-2 {
+    background-color: #F6E300;
+}
+
+.bg-yellow {
+    background: #FFF03F !important;
+}
+
+.add-icon::after {
+    background-image: url(/assets/image/svg/add-icon.svg) !important;
+    transform: rotate(-90deg) !important;
+}
+
+.add-icon:not(.collapsed):after {
+    background-image: url(/assets/image/svg/subtract-icon.svg) !important;
+    transform: none !important;
+}
+
+.max-width-922 {
+    max-width: 992px;
+}
+
+/*===================================accordion-2============================*/
+.bg-img-sec-2 {
+    background-image: url(/assets/image/png/sec-2-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.down-arrow::after {
+    background-image: url(/assets/image/svg/white-down-arrow.svg) !important;
+}
+
+.color-linear {
+    background: linear-gradient(#815CC8 100%, #1BABFE 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-blur {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%) !important;
+}
+
+.max-width-1038 {
+    max-width: 1038px !important;
+}
+
+/*===================================accordion-3============================*/
+.bg-img-sec-3 {
+    background-image: url(/assets/image/png/sec-3-bg-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accordion-button {
+    box-shadow: none !important;
+}
+
+.border-accordian {
+    border: 1px solid #1EADB6 !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-right-radius: 40px !important;
+}
+
+.accordion-arrow::after {
+    background-image: url(/assets/image/svg/green-down-arrow.svg) !important;
+}
+
+.top {
+    top: -0.7px;
+    left: -0.3px;
+}
+
+.bottom {
+    bottom: -0.7px;
+    right: -1.5px;
+}
+
+.border-shadow {
+    -webkit-box-shadow: 0px -1px 12px -2px rgba(30, 173, 182, 1);
+    -moz-box-shadow: 0px -1px 12px -2px rgba(30, 173, 182, 1);
+    box-shadow: 0px -1px 12px -2px rgba(30, 173, 182, 1);
+}
+
+.border-shadow:has(.accordion-header > .accordion-button.collapsed) {
+    box-shadow: unset !important;
+}
+
+.max-width-1078 {
+    max-width: 1078px !important;
+}
+
+.min-height-93 {
+    min-height: 93px;
+}
+
+.accordion-heading:not(.collapsed) {
+    font-weight: 500 !important;
+
+}
+
+.accordion-button.collapsed span {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.accordion-button span {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/*===========================================slider-1=====================*/
+
+.box {
     border: 2px solid #DDDDDD;
 }
 
-.min-height-230{
+.min-height-230 {
     min-height: 245px !important;
     min-width: 300px !important;
 }
-.max-width-555{
+
+.max-width-555 {
     max-width: 555px;
 }
-.border-radius{
+
+.border-radius {
     border-radius: 100% !important;
     border: 2px solid #F53838;
 }
-.box:hover{
-    border:2px solid red;
+
+.box:hover {
+    border: 2px solid red;
 }
 
-.button-hover:hover path{
+.button-hover:hover path {
     fill: #ffff;
 }
-.button-hover{
+
+.button-hover {
     transition: all .3s linear;
 }
-.button-hover:hover{
-  background-color: red;
+
+.button-hover:hover {
+    background-color: red;
 }
 
 .slick-dots li button:before {
