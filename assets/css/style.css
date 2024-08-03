@@ -1,6 +1,5 @@
 @import url(/assets/css/root.css);
-
-@import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -15,6 +14,9 @@
 
 .font-Montserrat {
     font-family: "Montserrat", sans-serif;
+}
+.font-rubik{
+    font-family: "Rubik", sans-serif;
 }
 
 /*===================================accordion-1============================*/
@@ -154,7 +156,7 @@
     border: 2px solid red;
 }
 
-.button-hover:hover path {
+.button-hover:active path {
     fill: #ffff;
 }
 
@@ -162,7 +164,7 @@
     transition: all .3s linear;
 }
 
-.button-hover:hover {
+.button-hover:active {
     background-color: red;
 }
 
@@ -170,7 +172,7 @@
     opacity: 0 !important;
 }
 
-.slick-track {
+.container .slider .slick-track {
     display: flex !important;
     gap: 50px !important;
 }
@@ -203,6 +205,7 @@
     width: 55.5%;
 }
 
+
 .slick-dots li button:before {
     font-family: "slick";
     font-size: 6px;
@@ -216,4 +219,71 @@
     text-align: center;
     opacity: 0.25;
     color: transparent !important;
+}
+ .slick-slide.slick-center {
+    border: 2px solid red;
+}
+
+    /*==========================================slider-2=======================*/
+    .slider-2-bg{
+        background: #140D1B;
+    }
+    .slid{
+        background: #140F40;
+    }
+  
+    
+.container .slider-2 .slick-dots li button:before {
+    opacity: 0 !important;
+}
+
+.container .slider-2 .slick-track {
+    display: flex !important;
+    gap: 50px !important;
+}
+
+.container .slider-2 .slick-dots li {
+    transition: 0.3s !important;
+}
+
+.container .slider-2 .slick-dots li {
+    background-color: #dde0e4;
+    height: 12px;
+    width: 28px;
+    border-radius: 21px;
+}
+
+.container .slider-2 .slick-dots .slick-active {
+    width: 59px;
+    height: 12px;
+    background-color:blue;
+    border-radius: 21px;
+   
+}
+
+
+.container .slider-2 .slick-dots {
+    display: flex;
+    margin-top: 10px;
+    bottom: -60px !important;
+    width: 55.5%;
+    right: 5% !important;
+}
+.container .slider-2 .slick-next:before, .slick-prev:before{
+    display: none;
+}
+.py-10{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.slider-star{
+    left:0;
+    bottom: 20%;
+}
+.slider-2{
+    max-width: 1140px !important;
+}
+.container .slider-2 .slick-track {
+    display: flex !important;
+    gap: 30px !important;
 }
